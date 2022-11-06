@@ -1,0 +1,98 @@
+.container {
+  background-color: #fff;
+  width: 1024px;
+  margin: 50px auto;
+  min-height: 300px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px silver;
+}
+.header {
+  padding: 30px 50px;
+  background-color: #00b38a;
+  color: #fff;
+  .section {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    p {
+      padding: 5px 0;
+    }
+    .name {
+      font-size: 52px;
+    }
+    .job {
+      font-size: 24px;
+      span{
+        font-size: 14px;
+      }
+    }
+    .info,
+    .link {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    .link {
+      text-align: right;
+    }
+
+    &.hd {
+      align-items: baseline;
+      border-bottom: 2px solid #00a982;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+    }
+  }
+}
+
+.container-body {
+  min-height: 200px;
+  padding: 20px 30px 50px;
+  overflow: hidden;
+  .section {
+    padding: 10px 15px;
+  }
+
+  .section-hd {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    .title {
+      width: 24%;
+      font-size: 16px;
+      min-width: 100px;
+      text-align: center;
+      margin: 0 10px;
+      padding: 0 10px;
+      border-radius: 32px;
+      background-color: #eee;
+      line-height: 32px;
+    }
+    .line {
+      border-bottom: 1px solid #eee;
+      flex: 1;
+      height: 0;
+    }
+  }
+
+  .section-bd {
+    font-size: 14px;
+    .iconfont {
+      color: #00b38a;
+    }
+    .item {
+        line-height: 30px;
+        p{
+          line-height: 24px;
+        }
+    }
+    .item-main,.item-stage{
+        display: flex;
+        justify-content: space-between;
+        .mid{
+            flex: 1;
+            padding: 0 40px;
+        }
+    }
+  }
+}
