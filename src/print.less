@@ -1,0 +1,46 @@
+// 打印样式
+@media print {
+  // 打印样式
+  body {
+    padding-top: 0;
+  }
+  .container {
+    width: 970px;
+    height: 1372px;
+    margin: 0 auto;
+    border-radius: 0;
+  }
+  .pdf {
+    display: none;
+  }
+  .last-modified {
+    position: fixed;
+    z-index: 1;
+    width: 970px;
+    top: auto;
+    bottom: 30px;
+    text-align: left;
+    padding-left: 50px;
+    color: #d1d1d1;
+  }
+  footer {
+    position: fixed;
+    z-index: 1;
+    width: 970px;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: right;
+    padding-right: 45px;
+    &.github-footer {
+      display: none;
+    }
+    &.print-footer {
+      display: block;
+      .footer-link {
+        font-size: 12px;
+        margin: 0;
+      }
+    }
+  }
+}
