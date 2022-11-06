@@ -1,3 +1,35 @@
+@color-main: #00b38a; // 主色
+@font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Microsoft YaHei",
+  "微软雅黑", Arial, sans-serif; // 普通字体
+@font-family-title: "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3",
+  @font-family; // 标题字体
+
+@mainText: #333;
+@subText: #666;
+
+em {
+  font-family: @font-family;
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 500;
+  color: #494949;
+  margin: 0 3px;
+  padding: 0 4px;
+  border-bottom: 1px solid #eee;
+  box-shadow: inset 0 -8px #eee;
+}
+strong {
+  display: inline-block;
+  font-family: Menlo, @font-family;
+  font-size: 12px;
+  line-height: 14px;
+  border: 1px solid #d1d1d1;
+  border-radius: 3px;
+  margin: 2px;
+  padding: 0 3px;
+  background-color: #f7f7f7;
+}
+
 .container {
   background-color: #fff;
   width: 1024px;
@@ -5,15 +37,24 @@
   min-height: 300px;
   border-radius: 5px;
   box-shadow: 0 0 15px silver;
+  transition: all 0.2s ease-in-out;
 }
 .header {
   padding: 30px 50px;
-  background-color: #00b38a;
+  background-color: @color-main;
   color: #fff;
+  @media screen and (max-width: 720px) {
+    padding: 30px 20px;
+    text-align: center;
+  }
   .section {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
+    @media screen and (max-width: 720px) {
+      display: inline-block;
+      text-align: center;
+    }
     p {
       padding: 5px 0;
     }
@@ -22,18 +63,58 @@
     }
     .job {
       font-size: 24px;
-      span{
+      padding-top: 20px;
+      span {
         font-size: 14px;
       }
     }
     .info,
-    .link {
+    .address {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
     }
-    .link {
+    .info {
+      @media screen and (max-width: 720px) {
+        font-size: 18px;
+      }
+    }
+    .address {
       text-align: right;
+      font-size: 12px;
+      ul {
+        margin: 8px 0 4px;
+        @media screen and (max-width: 720px) {
+          margin: 16px 0 0;
+          text-align: center;
+        }
+        > li {
+          height: 22px;
+          @media screen and (max-width: 720px) {
+            display: inline-block;
+          }
+          > a {
+            font-family: @font-family-title;
+            font-size: 14px;
+            line-height: 22px;
+            color: #fff;
+            &:hover {
+              color: #e8e8e8;
+            }
+            .contact-link {
+              @media screen and (max-width: 720px) {
+                display: none;
+              }
+            }
+            .iconfont {
+              margin-left: 6px;
+              @media screen and (max-width: 720px) {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
     }
 
     &.hd {
@@ -49,15 +130,28 @@
   min-height: 200px;
   padding: 20px 30px 50px;
   overflow: hidden;
-  .section {
-    padding: 10px 15px;
+  color: @mainText;
+  display: flex;
+  @media screen and (max-width: 720px) {
+    padding: 20px 10px 50px;
+  }
+  @media screen and (max-width: 1024px) {
+    display: block;
+  }
+  .container-body-item {
+    flex: 1;
+    flex-basis: 0;
+    .article {
+      padding: 10px 15px;
+    }
   }
 
   .section-hd {
     display: flex;
-    align-items: center;
     margin: 10px 0;
+    align-items: center;
     .title {
+      font-family: @font-family-title;
       width: 24%;
       font-size: 16px;
       min-width: 100px;
@@ -78,21 +172,23 @@
   .section-bd {
     font-size: 14px;
     .iconfont {
-      color: #00b38a;
+      color: @color-main;
     }
     .item {
-        line-height: 30px;
-        p{
-          line-height: 24px;
-        }
+      line-height: 30px;
+      p {
+        line-height: 24px;
+      }
     }
-    .item-main,.item-stage{
-        display: flex;
-        justify-content: space-between;
-        .mid{
-            flex: 1;
-            padding: 0 40px;
-        }
+    .item-top,
+    .item-stage {
+      display: flex;
+      justify-content: space-between;
+      color: @subText;
+      .mid {
+        flex: 1;
+        padding: 0 40px;
+      }
     }
   }
 }
