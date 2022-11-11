@@ -197,11 +197,16 @@ strong {
     font-size: 14px;
     .iconfont {
       color: @color-main;
+      &.inline {
+        color: @color-main;
+        font-size: 14px;
+        padding-right: 2px;
+      }
     }
     .item {
       line-height: 30px;
       p {
-        line-height: 24px;
+        line-height: 26px;
       }
     }
     .item-top,
@@ -213,6 +218,9 @@ strong {
         flex: 1;
         padding: 0 40px;
       }
+    }
+    .item-more {
+      line-height: 25px;
     }
   }
 }
@@ -254,7 +262,6 @@ strong {
 footer {
   position: relative;
   text-align: center;
-  width: 1024px;
   margin: 30px auto;
   &.github-footer {
     display: block;
