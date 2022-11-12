@@ -1,23 +1,21 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-
-const webpack = require("webpack");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
   output: {
-    filename: "bundle.js",
+    filename: "[name].[chunkhash].js",
     path: path.resolve(__dirname, "dist"),
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "./src/index.html",
+      filename: "index.html",
       updateTime: getTime(),
     }),
-    new webpack.HotModuleReplacementPlugin(),
     new CopyWebpackPlugin({
       patterns: [
         {
@@ -33,11 +31,11 @@ module.exports = {
     rules: [
       {
         test: /\.less$/,
-        use: ["style-loader", "css-loader", "less-loader"],
+        use: ["style-loader", "css-loader", postcssoader(), "less-loader"],
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        use: ["style-loader", "css-loader", postcssoader()],
       },
     ],
   },
@@ -45,6 +43,17 @@ module.exports = {
     host: "0.0.0.0",
   },
 };
+
+function postcssoader() {
+  return {
+    loader: "postcss-loader",
+    options: {
+      postcssOptions: {
+        plugins: [["postcss-preset-env"]],
+      },
+    },
+  };
+}
 
 function getTime() {
   let date = new Date();
