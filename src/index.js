@@ -1,4 +1,4 @@
-import "./iconfont.less";
-import "./reset.less";
-import "./resume.less";
-import "./print.less";
+import "./font/iconfont.less";
+import "./css/reset.less";
+import "./css/resume.less";
+import "./css/print.less";

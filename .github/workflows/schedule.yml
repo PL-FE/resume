@@ -1,0 +1,34 @@
+name: CI/CD
+# 触发条件为 push
+on: [push] # 执行时机
+# 任务
+jobs:
+  test:
+    # 运行的环境
+    runs-on: ubuntu-latest
+    # 步骤
+    steps:
+      - uses: actions/checkout@v2 # git pull
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - name: 打包镜像, 上传 Docker Hub
+        run: |
+          docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+          docker build -t resume-image  .
+          docker tag resume-image ${{ secrets.DOCKER_REPOSITORY }}
+          docker push ${{ secrets.DOCKER_REPOSITORY }}:latest
+
+      - name: 登录服务器, 执行脚本
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          script: |
+            docker stop resume
+            docker rm resume
+            docker rmi ${{ secrets.DOCKER_REPOSITORY }}:latest
+            docker pull ${{ secrets.DOCKER_REPOSITORY }}:latest
+            docker run --restart=always -d -p 10002:80 --name resume ${{ secrets.DOCKER_REPOSITORY }}:latest
