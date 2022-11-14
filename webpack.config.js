@@ -41,6 +41,9 @@ module.exports = {
   },
   devServer: {
     host: "0.0.0.0",
+    watchFiles: ["./src/index.html"],
+    open: "http://localhost:8080",
+    port: 8080,
   },
 };
 
