@@ -1,355 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no"
-    />
 
-    <title>简历 | 彭梁 - pengliang</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no" />
 
-  <body>
-    <p class="last-modified">
-      最后更新时间：<%=htmlWebpackPlugin.options.updateTime%>
-    </p>
-    <div class="container">
-      <header class="header">
-        <section class="section hd">
-          <div class="title">
-            <p class="name">彭 梁</p>
-          </div>
+  <title>简历 | 彭梁 - pengliang</title>
+</head>
 
-          <div class="job">
-            <h2>Web 前端开发工程师 <span>/ 重庆 / 随时到岗</span></h2>
-          </div>
-        </section>
-        <section class="section">
-          <div class="info">
-            <p>男 / 1996.09</p>
-            <p>本科 / 2019年毕业 · 3年工作经验</p>
-            <p>桂林理工大学 · 信息与计算科学</p>
-          </div>
-          <address class="address">
-            <ul>
-              <li>
-                <a href="https://pl-fe.cn" target="_blank"
-                  ><span class="contact-link">pl-fe.cn</span
-                  ><i class="iconfont icon-homepage"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://github.com/PL-FE" target="_blank"
-                  ><span class="contact-link">github.com/PL-FE</span
-                  ><i class="iconfont icon-github"></i
-                ></a>
-              </li>
-              <li>
-                <a href="mailto:penglianger@qq.com" target="_blank"
-                  ><span class="contact-link">penglianger@qq.com</span
-                  ><i class="iconfont icon-email"></i
-                ></a>
-              </li>
-              <li>
-                <a href="tel:185-9327-6510" target="_blank"
-                  ><span class="contact-link">185-9327-6510</span
-                  ><i class="iconfont icon-phone"></i
-                ></a>
-              </li>
-            </ul>
-          </address>
-        </section>
-      </header>
-
-      <main class="container-body">
-        <div class="container-body-item">
-          <article class="article">
-            <header class="section-hd">
-              <span class="line"></span>
-              <h3 class="title">工作经验</h3>
-              <span class="line"></span>
-            </header>
-
-            <div class="section-bd">
-              <div class="item item-top">
-                <span>2019.07 ~ 2022.11</span>
-                <span class="mid">易宝（东莞）软件有限公司</span>
-                <span class="job">工作</span>
-              </div>
-              <div class="item item-stage">
-                <span><i class="iconfont icon-dot"></i>CoNet · PC</span>
-                <span>2021.02 - 2022.11</span>
-              </div>
-              <div class="item item-info">
-                <p></p>
-                <p>
-                  <em>核心开发</em>
-                  主要负责重构版本项目的搭建、团队前端公共基础的建设与规划，以及模块开发。主要技术栈：<strong
-                    >Vue2</strong
-                  >
-                  、
-                  <strong>Componsition API</strong>
-                  、<strong> Mapbox GL(地图引擎)</strong> 、
-                  <strong>Element UI</strong> 等。
-                </p>
-                <p>
-                  <em>1. 项目搭建</em>使用
-                  <strong>Vue Cli</strong> 进行项目搭建， 结合
-                  <strong>Eslint</strong> 和
-                  <strong>Githook</strong>
-                  保证代码质量及校验提交信息，引入字体图标库，减少 http 请求。
-                </p>
-                <p>
-                  <em>2. 公共基础</em>负责实现组件文档库，通过
-                  <strong>自定义 md-loader</strong>加载
-                  <strong>Markdown文件</strong>
-                  ，生成可演示可复制代码的轻量级组件文档库，加速团队理解公共组件。
-                </p>
-                <p>
-                  统一进行请求拦截，增加可选配置项，
-                  ，响应拦截，提前捕获异常，根据状态码，显示对应的消息通知。
-                </p>
-                <p>
-                  主动
-                  <em>codeview</em>
-                  ，提前发现不规范代码、可优化的代码，避免坏代码的提交。
-                </p>
-                <p>
-                  从
-                  <strong>网络请求</strong>、<strong>JavaScript 耗时</strong>
-                  、<strong>dom渲染</strong>等多方面进行分析，对页面性能进行优化。
-                </p>
-                <p>
-                  <em>3. 模块开发</em>负责迭代系统模块及地图可视化操作。
-                  由于项目中数据呈现基本为表格及表单等形式，输出了
-                  <strong>CustomTable</strong> 、<strong>CustomForm</strong>
-                  、<strong>CustomDialog</strong> 、<strong
-                    >LoadingButton</strong
-                  >
-                  等公共组件,能够满足80%的业务需求。 及针对优化大数据量
-                  <strong>v-select-more</strong> 的指令。
-                  对地图进行实例化管理，将地图的操作封装成类，增强代码复用。通过实现类的方法为地图增加多边形绘制、框选、高亮、计算距离等功能。
-                </p>
-              </div>
-
-              <div class="item item-stage">
-                <span><i class="iconfont icon-dot"></i>站点集成设计 · PC</span>
-                <span>2019.07 - 2021.01</span>
-              </div>
-              <div class="item item-info">
-                <p>
-                  <em>前端开发</em>
-                  负责基于
-                  <strong>bpmn.js</strong>
-                  搭建流程可视化编排，与后端配合实现流程的开始、结束、网关及状态，并验证流程的规则，以及任务管理模块的实现。
-                </p>
-                <p>
-                  <em>1. 善于使用 Js 工具</em>
-                  使用表格、表单、富文本编辑器、在线 Excel 等多种 Js
-                  工具实现人员任务的管理、指派、提交，收集过程材料，完成任务，输出报告。
-                </p>
-                <p>
-                  <em>2. 源码阅读</em> 通过阅读
-                  <strong>
-                    <a href="https://github.com/bpmn-io/bpmn-js" target="_blank"
-                      ><i class="iconfont icon-link inline"></i>bpmn.js源码</a
-                    >
-                  </strong>
-                  来支撑业务的实现，输出了相关
-                  业务组件、配置文件，以及笔记，其中
-                  <strong>
-                    <a href="https://github.com/PL-FE/bpmn-doc" target="_blank"
-                      ><i class="iconfont icon-link inline"></i>bpmn.js笔记</a
-                    > </strong
-                  >脱敏开源到 Github，获得190+star。
-                </p>
-              </div>
-            </div>
-          </article>
+<body>
+  <p class="last-modified">
+    最后更新时间：<%=htmlWebpackPlugin.options.updateTime%>
+  </p>
+  <div class="container">
+    <header class="header">
+      <section class="section hd">
+        <div class="title">
+          <p class="name">彭 梁</p>
         </div>
-        <div class="container-body-item">
-          <article class="article">
-            <header class="section-hd">
-              <span class="line"></span>
-              <h3 class="title">专业能力</h3>
-              <span class="line"></span>
-            </header>
 
-            <div class="section-bd">
-              <div class="item item-info">
-                <p>
-                  <i class="iconfont icon-dot"></i>
-                  3年前端工作经验。
-                </p>
-                <p>
-                  <i class="iconfont icon-dot"></i>
-                  掌握Web前端开发基本技能，熟悉W3C标准、
-                  <strong>HTML</strong> 、<strong>CSS</strong>
-                  ，具有一定的审美，重视页面交互和还原UI。
-                </p>
-                <p>
-                  <i class="iconfont icon-dot"></i>
-                  对
-                  <strong>JavaScript</strong>
-                  、各类UI组件库、JS类库、模板引擎、MV*框架、工程化工具等有一定的认知，能够快速上手。
-                </p>
-                <p>
-                  <i class="iconfont icon-dot"></i>
-                  熟练使用ES6语法编程，追求代码高质量可维护性。以
-                  <strong>Vue2</strong> 、<strong>Less</strong>、<strong
-                    >Element UI</strong
-                  >
-                  等为常用技术栈，对
-                  <strong>Vue2源码</strong> 有一定的了解，能够使用
-                  <strong>Vue3</strong> 进行开发。
-                </p>
-                <p>
-                  <i class="iconfont icon-dot"></i>
-                  熟练使用 <strong>Git</strong> 进行版本控制和代码托管、<strong
-                    >Markdown</strong
-                  >
-                  进行文档编写。 熟悉项目常规开发流程，能够使用
-                  <strong>Webpack</strong>
-                  进行常用的配置，并对其运行机制有一定的了解。
-                  熟悉开发调试技巧，熟练借助工具进行代码调试定位。
-                  了解部署步骤，能够使用<strong>Docker</strong> 进行打包部署。
-                </p>
-                <p>
-                  <i class="iconfont icon-dot"></i>
-                  时刻保持好奇心，持续关注业内前沿技术，拥抱开源。
-                  工作上积极执行有责任心，具有良好的沟通合作能力、分析解决问题能力以及较强的学习能力。
-                </p>
-              </div>
-            </div>
-          </article>
-          <article class="article">
-            <header class="section-hd">
-              <span class="line"></span>
-              <h3 class="title">个人作品</h3>
-              <span class="line"></span>
-            </header>
-
-            <div class="section-bd">
-              <div class="item item-top">
-                <p>
-                  <i class="iconfont icon-dot"></i>
-                  个人博客
-                </p>
-                <a
-                  class="item-more"
-                  href="https://pl-fe.cn"
-                  target="_blank"
-                  title="个人主页"
-                  ><i class="iconfont icon-homepage"></i
-                ></a>
-              </div>
-              <div class="item item-info">
-                <p>
-                  爱好琢磨一些有趣有意思的东西，并以
-
-                  <a href="https://pl-fe.cn" target="_blank"
-                    ><i class="iconfont icon-link inline"></i>pl-fe.cn</a
-                  >
-                  作为个人域名，使用
-                  <strong>Hexo</strong>
-                  搭建了个人博客，集成了网易云音乐、评论通知等功能。
-                </p>
-                <p>
-                  同时热爱开源精神，拥抱开源社区，乐于在
-                  <strong>
-                    <a
-                      href="https://blog.csdn.net/qq_39211165?type=blog"
-                      target="_blank"
-                      title="CSDN"
-                      ><i class="iconfont icon-link inline"></i>CSDN</a
-                    >
-                  </strong>
-                  或
-                  <strong>
-                    <a href="https://github.com/PL-FE" target="_blank"
-                      ><i class="iconfont icon-github inline"></i>Github</a
-                    >
-                  </strong>
-                  技术交流分享。
-                </p>
-              </div>
-
-              <div class="item item-top">
-                <p>
-                  <i class="iconfont icon-dot"></i>
-                  个人项目 · 基于 Vue3 的音乐网站
-                </p>
-                <a
-                  class="item-more"
-                  href="http://music.pl-fe.cn/#/"
-                  target="_blank"
-                  title="音乐网站"
-                  ><i class="iconfont icon-link"></i
-                ></a>
-              </div>
-              <div class="item item-info">
-                <p>
-                  支持登陆、在线听歌、搜索、歌单、歌手等功能，同时适配了移动端。
-                </p>
-                <p>
-                  前端使用 <strong>Vite</strong> 初始化项目，基于
-                  <strong>Vue3</strong>、<strong>TypeScript</strong>、<strong
-                    >Element Plus</strong
-                  >
-                  、<strong>Less</strong>完成界面开发， 使用
-                  <strong>Pinia</strong> 对全局数据进行统一管理。
-                </p>
-                <p>
-                  对部分页面做了缓存，对数据量大的场景使用滚动加载的形式。
-                  图片方面，采用了懒加载及缩略图等方案提升页面加载速度。
-                </p>
-                <p>
-                  使用
-                  <strong>GitHub Actions</strong> +
-                  <strong>Docker</strong> 自动部署到服务器。
-                </p>
-              </div>
-
-              <div class="item item-top">
-                <p>
-                  <i class="iconfont icon-dot"></i>
-                  个人项目 · bpmn-doc (192 Starred / 70 Fork)
-                </p>
-                <a
-                  class="item-more"
-                  href="https://github.com/PL-FE/bpmn-doc"
-                  target="_blank"
-                  title="bpmn-doc"
-                  ><i class="iconfont icon-link"></i
-                ></a>
-              </div>
-              <div class="item item-info">
-                当时网上关于 <strong>bpmn.js</strong>
-                的资料并不多,所以开源并维护这份笔记，撰写详尽自己的实现方案，并加入技术群参与交流，寻求更优解。
-              </div>
-            </div>
-          </article>
+        <div class="job">
+          <h2>Web 前端开发工程师 <span>/ 重庆 / 随时到岗</span></h2>
         </div>
-      </main>
-    </div>
-    <footer class="footer github-footer">
-      <a
-        class="footer-link"
-        href="https://github.com/PL-FE/resume"
-        target="_blank"
-        ><i class="iconfont icon-github"></i> Github 仓库</a
-      >
-    </footer>
-    <footer class="footer print-footer">
-      <a class="footer-link" href="http://resume.pl-fe.cn" target="_blank"
-        ><i class="iconfont icon-link"></i>
-        网页版简历：http://resume.pl-fe.cn</a
-      >
-    </footer>
-    <a class="pdf" href="resume.pdf"
-      ><i class="iconfont icon-pdf"></i> PDF简历</a
-    >
-  </body>
+      </section>
+      <section class="section">
+        <div class="info">
+          <p>男 / 1996.09</p>
+          <p>本科 / 2019年毕业 · 3年工作经验</p>
+          <p>桂林理工大学 · 信息与计算科学</p>
+        </div>
+        <address class="address">
+          <ul>
+            <li>
+              <a href="https://pl-fe.cn" target="_blank"><span class="contact-link">pl-fe.cn</span><i
+                  class="iconfont icon-homepage"></i></a>
+            </li>
+            <li>
+              <a href="https://github.com/PL-FE" target="_blank"><span class="contact-link">github.com/PL-FE</span><i
+                  class="iconfont icon-github"></i></a>
+            </li>
+            <li>
+              <a href="mailto:penglianger@qq.com" target="_blank"><span class="contact-link">penglianger@qq.com</span><i
+                  class="iconfont icon-email"></i></a>
+            </li>
+            <li>
+              <a href="tel:185-9327-6510" target="_blank"><span class="contact-link">185-9327-6510</span><i
+                  class="iconfont icon-phone"></i></a>
+            </li>
+          </ul>
+        </address>
+      </section>
+    </header>
+
+    <main class="container-body">
+      <div class="container-body-item">
+        <article class="article">
+          <header class="section-hd">
+            <span class="line"></span>
+            <h3 class="title">专业能力</h3>
+            <span class="line"></span>
+          </header>
+
+          <div class="section-bd">
+            <div class="item item-info">
+              <p>
+                <i class="iconfont icon-dot"></i>
+                3年前端工作经验。
+              </p>
+              <p>
+                <i class="iconfont icon-dot"></i>
+                熟悉 HTTP 协议等通用应用层协议, 了解前端缓存，浏览器渲染原理。
+              </p>
+              <p>
+                <i class="iconfont icon-dot"></i>
+                掌握Web前端开发基本技能，熟悉W3C标准、
+                <strong>HTML</strong> 、<strong>CSS</strong>
+                ，具有一定的审美，重视页面交互和还原UI。
+              </p>
+              <p>
+                <i class="iconfont icon-dot"></i>
+                对
+                <strong>JavaScript</strong>
+                、各类UI组件库、JS类库、模板引擎、MV*框架、工程化工具等有一定的认知，能够快速上手。
+              </p>
+              <p>
+                <i class="iconfont icon-dot"></i>
+                熟练使用ES6语法编程，追求代码高质量可维护性。以
+                <strong>Vue2</strong> 、<strong>Less</strong>、<strong>Element UI</strong>
+                等为常用技术栈，对
+                <strong>Vue2源码</strong> 有一定的了解，能够使用
+                <strong>Vue3</strong> 进行开发。
+              </p>
+              <p>
+                <i class="iconfont icon-dot"></i>
+                熟练使用 <strong>Git</strong> 进行版本控制和代码托管、<strong>Markdown</strong>
+                进行文档编写。 熟悉项目常规开发流程，能够使用
+                <strong>Webpack</strong>
+                进行常用的配置，并对其运行机制有一定的了解。
+                熟悉开发调试技巧，熟练借助工具进行代码调试定位。
+                了解部署步骤，能够使用<strong>Docker</strong> 进行打包部署。
+              </p>
+              <p>
+                <i class="iconfont icon-dot"></i>
+                时刻保持好奇心，持续关注业内前沿技术，拥抱开源。
+                工作上积极执行有责任心，具有良好的沟通合作能力、分析解决问题能力以及较强的学习能力。
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="article">
+          <header class="section-hd">
+            <span class="line"></span>
+            <h3 class="title">工作经验</h3>
+            <span class="line"></span>
+          </header>
+
+          <div class="section-bd">
+            <div class="item item-top">
+              <span>2019.07 ~ 2022.11</span>
+              <span class="mid">易宝（东莞）软件有限公司</span>
+              <span class="job">工作</span>
+            </div>
+            <div class="item item-stage">
+              <span><i class="iconfont icon-dot"></i>CoNet · PC项目</span>
+              <span>2021.02 - 2022.11</span>
+            </div>
+            <div class="item item-info">
+
+              <p>
+                该项目的主要是改变传统的作业模式，从谷歌地图+Excel 转变为在线集成+自动化，实现海量数据的精准规划，缩短工作周期，计算自动化，减少手工变更传递遗漏的问题。
+              </p>
+              <p>
+                <em>核心开发</em>
+              </p>
+              <p>
+                主要负责项目重构版本的搭建、团队前端公共基础的建设与规划，以及模块开发。主要技术栈：<strong>Vue2</strong>
+                、
+                <strong>Componsition API</strong>
+                、<strong> Mapbox GL(地图引擎)</strong> 、
+                <strong>Element UI</strong>、<strong>Less</strong> 等。
+              </p>
+              <div>
+                <p>
+                  1. 使用 <strong>Vue Cli</strong> 进行项目搭建，设计项目结构，划分模块，对<strong>Axios</strong>进行封装配置。结合
+                  <strong>Eslint</strong> 和 <strong>Githook</strong> 保证代码质量及校验提交信息，引入字体图标库。
+                </p>
+                <p>
+                  2. 负责实现组件文档库，扩展 Markdown 插件，增加自定义容器，生成 Code 及 Vue 组件，从而实现可演示可复制的轻量级组件文档库。
+                </p>
+                <p>
+                  3. 封装常用的工具函数、组件，能够满足基础业务需求，提升开发效率。
+                </p>
+                <p>
+                  4. 负责地图可视化开发及系统模块的开发，利用路由元信息区分场景结合配置文件完成对页面功能点的控制。
+                </p>
+                <p>
+                  <em>除了日常开发，还针对性能做了一些优化。</em>
+                </p>
+                <p>
+                  1. 使用虚拟列表虚拟树等组件替换数据量大的组件，加快渲染速度。
+                </p>
+                <p>
+                  2. 静态文件使用内容哈希方便缓存，使用<strong>keep-alive</strong>缓存频繁切换的地图组件。
+                </p>
+                <p>
+                  3. 合理使用防抖节流、事件委托，简化样式选择器，排查可能重排的代码。
+                </p>
+              </div>
+            </div>
+
+            <div class="item item-stage">
+              <span><i class="iconfont icon-dot"></i>站点集成设计 · PC项目</span>
+              <span>2019.07 - 2021.01</span>
+            </div>
+            <div class="item item-info">
+              <p>
+                该项目的主要作用功能是继承勘测和多专业的设计数据，高效准确的完成单站综合设计，自动输出客户化设计文档。
+              </p>
+              <p>
+                <em>前端开发</em>
+              </p>
+              <p>
+                负责基于
+                <strong>bpmn.js</strong>
+                搭建流程可视化编排，与后端配合实现流程的开始、结束、网关及状态，并验证流程的规则，以及任务管理模块的实现。
+              </p>
+              <p>
+                <em>1. 善于使用 Js 工具</em>
+                使用表格、表单、富文本编辑器、在线 Excel 等多种 Js
+                工具实现人员任务的管理、指派、提交，收集过程材料，完成任务，输出报告。
+              </p>
+              <p>
+                <em>2. 源码阅读</em> 通过阅读
+                <strong>
+                  <a href="https://github.com/bpmn-io/bpmn-js" target="_blank"><i
+                      class="iconfont icon-link inline"></i>bpmn.js源码</a>
+                </strong>
+                来支撑业务的实现，输出了相关
+                业务组件、配置文件，以及笔记，其中
+                <strong>
+                  <a href="https://github.com/PL-FE/bpmn-doc" target="_blank"><i
+                      class="iconfont icon-link inline"></i>bpmn.js笔记</a> </strong>脱敏开源到 Github，获得190+star。
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- 打印换行 -->
+        <div style="page-break-after: always"></div>
+
+        <article class="article">
+          <header class="section-hd">
+            <span class="line"></span>
+            <h3 class="title">个人作品</h3>
+            <span class="line"></span>
+          </header>
+
+          <div class="section-bd">
+            <div class="item item-top">
+              <p>
+                <i class="iconfont icon-dot"></i>
+                个人博客
+              </p>
+              <a class="item-more" href="https://pl-fe.cn" target="_blank" title="个人主页"><i
+                  class="iconfont icon-homepage"></i></a>
+            </div>
+            <div class="item item-info">
+              <p>
+                爱好琢磨一些有趣有意思的东西，并以
+
+                <a href="https://pl-fe.cn" target="_blank"><i class="iconfont icon-link inline"></i>pl-fe.cn</a>
+                作为个人域名，使用
+                <strong>Hexo</strong>
+                搭建了个人博客，集成了网易云音乐、评论通知等功能。
+              </p>
+              <p>
+                同时热爱开源精神，拥抱开源社区，乐于在
+                <strong>
+                  <a href="https://blog.csdn.net/qq_39211165?type=blog" target="_blank" title="CSDN"><i
+                      class="iconfont icon-link inline"></i>CSDN</a>
+                </strong>
+                或
+                <strong>
+                  <a href="https://github.com/PL-FE" target="_blank"><i
+                      class="iconfont icon-github inline"></i>Github</a>
+                </strong>
+                技术交流分享。
+              </p>
+            </div>
+
+            <div class="item item-top">
+              <p>
+                <i class="iconfont icon-dot"></i>
+                个人项目 · 基于 Vue3 的音乐网站
+              </p>
+              <a class="item-more" href="http://music.pl-fe.cn/#/" target="_blank" title="音乐网站"><i
+                  class="iconfont icon-link"></i></a>
+            </div>
+            <div class="item item-info">
+              <p>
+                支持登陆、在线听歌、搜索、歌单、歌手等功能，同时适配了移动端。
+              </p>
+              <p>
+                前端使用 <strong>Vite</strong> 初始化项目，基于
+                <strong>Vue3</strong>、<strong>TypeScript</strong>、<strong>Element Plus</strong>
+                、<strong>Less</strong>完成界面开发， 使用
+                <strong>Pinia</strong> 对全局数据进行统一管理。
+              </p>
+              <p>
+                对部分页面做了缓存，对数据量大的场景使用滚动加载的形式。
+                图片方面，采用了懒加载及缩略图等方案提升页面加载速度。
+              </p>
+              <p>
+                使用
+                <strong>GitHub Actions</strong> +
+                <strong>Docker</strong> 自动部署到服务器。
+              </p>
+            </div>
+
+            <div class="item item-top">
+              <p>
+                <i class="iconfont icon-dot"></i>
+                个人项目 · bpmn-doc (192 Starred / 70 Fork)
+              </p>
+              <a class="item-more" href="https://github.com/PL-FE/bpmn-doc" target="_blank" title="bpmn-doc"><i
+                  class="iconfont icon-link"></i></a>
+            </div>
+            <div class="item item-info">
+              当时网上关于 <strong>bpmn.js</strong>
+              的资料并不多,所以开源并维护这份笔记，撰写详尽自己的实现方案，并加入技术群参与交流，寻求更优解。
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+  </div>
+  <footer class="footer github-footer">
+    <a class="footer-link" href="https://github.com/PL-FE/resume" target="_blank"><i class="iconfont icon-github"></i>
+      Github 仓库</a>
+  </footer>
+  <footer class="footer print-footer">
+    <a class="footer-link" href="http://resume.pl-fe.cn" target="_blank"><i class="iconfont icon-link"></i>
+      网页版简历：http://resume.pl-fe.cn</a>
+  </footer>
+  <a class="pdf" href="resume.pdf"><i class="iconfont icon-pdf"></i> PDF简历</a>
+</body>
+
 </html>
