@@ -6,6 +6,9 @@
 
 @mainText: #333;
 @subText: #666;
+p {
+  line-height: 26px;
+}
 
 em {
   font-family: @font-family;
@@ -208,6 +211,9 @@ strong {
 
   .section-bd {
     font-size: 14px;
+    & + .section-bd {
+      margin-top: 15px;
+    }
     .iconfont {
       color: @color-main;
       &.inline {
