@@ -2,7 +2,7 @@ FROM node:14
 COPY ./ /app
 WORKDIR /app
 RUN npm install -g pnpm
-RUN pnpm config set registry https://registry.npm.taobao.org
+RUN pnpm config set registry https://registry.npmmirror.com
 RUN pnpm install && pnpm run build
 
 FROM nginx
