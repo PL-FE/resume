@@ -15,7 +15,6 @@ jobs:
           node-version: 14
       - name: 打包镜像, 上传 Docker Hub
         run: |
-          docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
           docker build -t resume-image  .
           docker tag resume-image registry.cn-hangzhou.aliyuncs.com/pengliang/resume-image
           docker push registry.cn-hangzhou.aliyuncs.com/pengliang/resume-image:latest
@@ -30,6 +29,5 @@ jobs:
             docker stop resume
             docker rm resume
             docker rmi registry.cn-hangzhou.aliyuncs.com/pengliang/resume-image:latest
-            docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
             docker pull registry.cn-hangzhou.aliyuncs.com/pengliang/resume-image:latest
             docker run --restart=always -d -p 10002:80 --name resume registry.cn-hangzhou.aliyuncs.com/pengliang/resume-image:latest
