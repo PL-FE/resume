@@ -14,7 +14,7 @@
 
 <body>
   <p class="last-modified">
-    最后更新时间：{{BUILD_TIME}}
+    最后更新时间：<span id="build-time">读取中...</span>
   </p>
   <div class="container">
     <header class="header">
@@ -275,6 +275,20 @@
       网页版简历：http://resume.pl-fe.cn</a>
   </footer>
   <a class="pdf" href="resume.pdf"><i class="iconfont icon-pdf"></i> PDF简历</a>
+  <script>
+    // 使用 fetch 请求时间文件，如果存在则渲染
+    fetch('build_time.txt?t=' + Date.now())
+      .then(res => {
+        if (!res.ok) throw new Error('File not found');
+        return res.text();
+      })
+      .then(text => {
+        document.getElementById('build-time').innerText = text.trim();
+      })
+      .catch((e) => {
+        document.getElementById('build-time').innerText = '未读取到时间节点';
+      });
+  </script>
 </body>
 
 </html>
