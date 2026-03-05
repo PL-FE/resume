@@ -1,8 +1,8 @@
-// 打印样式
 @media print {
-  // 打印样式
   body {
     padding-top: 0;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
   .page-padding {
     height: 50px;
@@ -36,15 +36,15 @@
     transform: translateX(-50%);
     text-align: right;
     padding-right: 45px;
-    &.github-footer {
-      display: none;
-    }
-    &.print-footer {
-      display: block;
-      .footer-link {
-        font-size: 12px;
-        margin: 0;
-      }
-    }
+  }
+  footer.github-footer {
+    display: none;
+  }
+  footer.print-footer {
+    display: block;
+  }
+  footer.print-footer .footer-link {
+    font-size: 12px;
+    margin: 0;
   }
 }

@@ -86,10 +86,8 @@ video {
   font-size: 100%;
   vertical-align: baseline;
 }
-
 html {
   line-height: 1;
-
   position: relative;
 }
 body {
@@ -97,17 +95,14 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
 ol,
 ul {
   list-style: none;
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 caption,
 td,
 th {
@@ -115,12 +110,10 @@ th {
   font-weight: 400;
   vertical-align: middle;
 }
-
 blockquote,
 q {
   quotes: none;
 }
-
 blockquote:after,
 blockquote:before,
 q:after,
@@ -135,7 +128,6 @@ a {
 a img {
   border: none;
 }
-
 ::-webkit-scrollbar {
   background-color: #f1f1f1;
   overflow: visible;
@@ -146,8 +138,7 @@ a img {
   background-color: rgba(0, 0, 0, 0.2);
   background-clip: padding-box;
   min-height: 15px;
-  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.07);
+  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.07);
 }
 ::-webkit-scrollbar-thumb:vertical:hover {
   background-color: rgba(0, 0, 0, 0.3);
@@ -167,7 +158,6 @@ a img {
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
-
 ::selection {
   background: #bbbbbb;
 }
