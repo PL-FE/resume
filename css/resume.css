@@ -106,6 +106,13 @@ strong {
 .header .section .name {
   font-size: 52px;
 }
+@media screen and (max-width: 720px) {
+  .header .section .name {
+    line-height: 1.5;
+    margin-top: 10px;
+    padding-bottom: 10px;
+  }
+}
 .header .section .job {
   font-size: 24px;
   padding-top: 20px;
